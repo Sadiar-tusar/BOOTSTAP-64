@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="moccasin">
+    <label for="">Number 1</label><br>
+    <input type="text" id="number1"><br>
+    
+    <label for="">Number 2</label><br>
+    <input type="text" id="number2"><br><br>
+
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="div()">
+    <input type="button" value="%" onclick="mod()">
+    <input type="button" value="Parsetage" onclick="parsentage()"><br><br>
+    <input type="text" id="result" style="color: brown;">
+    
+
+    <script>
+        function sum(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let sum=number1 + number2 ;
+            document.getElementById("result").value=sum;
+        }
+        function sub(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let sub=number1 - number2 ;
+            document.getElementById("result").value=sub;
+        }
+        function multi(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let multi=number1 * number2 ;
+            document.getElementById("result").value=multi;
+           
+
+        }
+        function div(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let div=number1 / number2 ;
+            document.getElementById("result").value=div;
+        }
+        function mod(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let mod=number1 % number2 ;
+            document.getElementById("result").value=mod;
+        }
+        function parsentage(){
+            let number1=parseFloat(document.getElementById ("number1").value);
+            let number2=parseFloat(document.getElementById ("number2").value);
+            let parsentage=(number1/100)*number2 ;
+            document.getElementById("result").value=parsentage;
+        }
+       
+    </script>
+
+</body>
+</html>
