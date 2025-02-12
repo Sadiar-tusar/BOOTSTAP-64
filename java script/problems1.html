@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let input1 = parseInt(prompt('Enter a 1st Number'));
+        let input2 = parseInt(prompt('Enter a 2nd Number'));
+        let input3 = parseInt(prompt('Enter a 3rd Number'));
+        // let input4 = parseInt(prompt('Enter a 4rd Number'));
+
+        if (input1 >= input2 && input1 >= input3) {
+            document.write(input1 + 'is Max Number');
+        }
+        else if (input2 >= input1 && input2 >= input3) {
+            document.write(input2 + 'is Max Number');
+        }
+        else {
+            document.write(input3 + 'is Max Number');
+        }
+    </script>
+</body>
+
+</html>
