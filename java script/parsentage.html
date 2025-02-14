@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let input = parseFloat(prompt('Calculate The Parccentage of Discount'));
+        let Parccentage1 = input - (input * 15) / 100;
+        let Parccentage2 = input - (input * 10) / 100;
+        if (input > 700) {
+            document.write('Invalid');
+        }
+        else if (input >= 301) {
+            document.write(Parccentage1);
+        }
+        else if (input >= 100) {
+            document.write(Parccentage2);
+        }
+        else {
+            document.write('Invalid');
+        }
+
+    </script>
+</body>
+
+</html>
