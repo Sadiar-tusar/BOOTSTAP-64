@@ -9,14 +9,15 @@
     <script>
         
          let p=parseFloat(prompt('Principal'));
-         let t=parseFloat(prompt('Time'));
+         let n=parseFloat(prompt('Time'));
          let r=parseFloat(prompt('Rate of Interest'));
-         let result=(p*t*r)/100;
-         if(t>5){
-            document.write(result+ 'is extra interest');
+         let result1=(p*n*r)/100;
+         let result2=(p*n*r)/100 + ((p*n*r)/100)*2/100;
+         if(n>5){
+            document.write(result2+ 'is extra interest');
          }
          else{
-            document.write(result+ 'is simple interest');
+            document.write(result1+ 'is simple interest');
          }
     </script>
 </body>
