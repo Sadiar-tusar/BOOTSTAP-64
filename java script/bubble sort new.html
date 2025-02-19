@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let input=[5, 10, 6, 2, 9, 1, 12, 8];
+        for(let i=0; i<input.length-1; i++){
+           for(let x=0; x<input.length-1-i; x++){
+            if(input[x]>input[x+1]){
+                let temp=input[x];
+                input[x]=input[x+1];
+                input[x+1]=temp;
+            }
+           } 
+        }
+        document.write(input)+' ';
+
+    </script>
+</body>
+</html>
